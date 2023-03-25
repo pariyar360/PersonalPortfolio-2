@@ -14,6 +14,7 @@
 
 .container {
     padding: 50px 0;
+    width: 100%;
 }
 
 .row {
@@ -40,7 +41,7 @@ button {
 }
 
 .title {
-    font-size: 120px;
+    font-size: 108px;
     margin-bottom: 12px;
     text-align: left;
     line-height: 1;
@@ -48,6 +49,32 @@ button {
 
 .orange {
     color: #f06449;
+}
+
+.link__hover-effect{
+    position: relative;
+}
+.link__hover-effect:after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    height: 3px;
+    width: 0;
+    transition: all 300ms ease;
+}
+
+.link__hover-effect--white::after {
+    background-color: white;
+}
+
+.link__hover-effect--black::after {
+    background-color: black;
+}
+
+.link__hover-effect:hover:after {
+    left: 0;
+    width: 100%;
 }
 
 /* Landing page */
@@ -262,7 +289,28 @@ nav {
 
 footer {
     background-color: #242424;
+    padding: 6% 0;
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer__logo--img {
+    width: 70px;
+    filter: invert(1);
+}
+
+.footer__social--list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    max-width: 480px;
+    margin: 20px 0;
+}
+
+.footer__social--link, .copyright {
+    color: white;
 }
