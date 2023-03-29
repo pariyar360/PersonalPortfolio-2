@@ -1,3 +1,15 @@
+let isModalOpen = false;
+let isDarkTheme = false;
+
+function toggleTheme() {
+    if (!isDarkTheme) {
+        isDarkTheme = true
+        return document.body.classList += " dark-theme"
+    }
+    isDarkTheme = false
+    document.body.classList.remove("dark-theme")
+}
+
 // send the contact message to me
 function contact(event) {
     // stop auto refreshing because form auto refreshes
@@ -22,7 +34,6 @@ function contact(event) {
 }
 
 // Toggle modal when clicked
-let isModalOpen = false;
 function toggleModal() {
     if (isModalOpen) {
         isModalOpen = false;
