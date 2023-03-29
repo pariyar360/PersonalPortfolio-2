@@ -44,9 +44,7 @@
             >
           </li>
           <li class="nav__link">
-            <a
-              href=""
-              class="nav__link--anchor"
+            <a href="" class="nav__link--anchor"
               ><i class="fa-solid fa-circle-half-stroke"></i
             ></a>
           </li>
@@ -89,6 +87,89 @@
       <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div>
       </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title">Here's a bit about me.</h3>
+          <h4 class="modal__sub-title">Frontend Software Engineer.</h4>
+          <p class="modal__para">
+            Hi there! I am a
+            <b class="orange">frontend software engineer</b> who has recently
+            graduated and I am very excited about the field of
+            <b class="orange">web development</b>.
+            <br />
+            I am passionate about learning and keeping up with industry best
+            practices in order to create <b class="orange">efficient</b> and
+            <b class="orange">user-friendly</b> interfaces. I am constantly
+            looking for new <b class="orange">challenges</b> to improve my
+            <b class="orange">skills</b> and <b class="orange">knowledge</b> in
+            this fast-paced and ever-evolving industry.
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img
+                src="./assets/HTML5_Badge.png"
+                alt="HTML5"
+                class="modal__language--img"
+              />
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                src="./assets/CSS3_logo.svg.png"
+                alt="CSS"
+                class="modal__language--img"
+              />
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                src="./assets/JavaScript_logo.svg"
+                alt="Javascript"
+                class="modal__language--img"
+              />
+              <span class="language__name">Javascript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                src="./assets/Python logo.svg"
+                alt="Python"
+                class="modal__language--img"
+              />
+              <span class="language__name">Python</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <h3 class="modal__title modal__title--contact">Let's have a chat</h3>
+          <h3 class="modal__sub-title modal__sub-title--contact">
+            I'm currently open to new opportunities.
+          </h3>
+          <form id="contact__form" action="">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input type="text" class="input" name="user_name" required>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input type="email" class="input" name="user_email" required>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea type="text" class="input" name="message" required></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send it my way
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! Looking forward to speaking to you soon.
+          </div>
+        </div>
+        <i class="fas fa-times modal__exit click"></i>
+      </div>
     </section>
 
     <section id="projects">
@@ -207,7 +288,7 @@
               >Resume</a
             >
           </div>
-          <div class="copyright">Copyright &copy; Prakash Pariyar</div>
+          <div class="copyright">Copyright &copy; 2023 Prakash Pariyar</div>
         </div>
       </div>
     </footer>
